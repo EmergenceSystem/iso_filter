@@ -1,0 +1,11 @@
+{application,iso_filter,
+             [{description,"Emergence filter agent for ISO standards (iso.org)"},
+              {vsn,"0.2.0"},
+              {registered,[iso_filter_sup,iso_filter_server]},
+              {mod,{iso_filter_app,[]}},
+              {applications,[kernel,stdlib,cowboy,em_filter]},
+              {env,[{pop_port,0},{query_port,0},{pop_seeds,[]}]},
+              {modules,[iso_filter_app,iso_filter_server,iso_filter_sup]},
+              {licenses,["Apache-2.0"]},
+              {links,[{"GitHub",
+                       "https://github.com/EmergenceSystem/iso_filter"}]}]}.
