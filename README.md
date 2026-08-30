@@ -3,6 +3,13 @@
 
 An [em_filter](https://hex.pm/packages/em_filter) agent that searches [ISO](https://www.iso.org/) for international standards by reference or keyword and returns results as [Emergence](https://github.com/EmergenceSystem/em_disco) results.
 
+
+<!-- emergence-context -->
+Part of **[EmergenceSystem](https://github.com/EmergenceSystem)** — a distributed
+discovery network of small, single-source agents. This filter joins the em_pop gossip
+mesh and answers `POST /agent/query`; Emquest fans each query out to many filters in
+parallel and aggregates the results.
+
 ## Query
 
 Any ISO standard reference or keyword accepted by the iso.org search.
